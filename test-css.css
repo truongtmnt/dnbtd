@@ -1,0 +1,31 @@
+.parent {
+  position: relative;
+}
+.div2 {
+  height: 200px;
+  background-color: green;
+  position: ;
+  opacity: 0.5;
+}
+.div3 {
+  height: 300px;
+  background-color: blue;
+  position: ;
+  opacity: 0.5;
+}
+.div4 {
+  height: 800px;
+  background-color: yellow;
+  position: ;
+}
+.div1 {
+  height: 50px;
+
+  position: -webkit-sticky;
+  position: sticky;
+
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4caf50;
+}
