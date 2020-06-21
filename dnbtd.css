@@ -1,0 +1,113 @@
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
+#mySidebar {
+  background-color: #f8f9fa;
+  transition: all 0.3s;
+  min-width: 250px;
+  max-width: 250px;
+  height: calc(100vh - 4rem);
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  z-index: 10;
+}
+.right-bar {
+  align-self: flex-start;
+  padding-right: 0;
+}
+
+#btnSidebar {
+  align-self: flex-start;
+  display: inline-block;
+  margin-right: 0;
+}
+button {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+button:hover,
+button:focus {
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.custom-menu {
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  z-index: 9;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin-right: -35px;
+}
+#btnSidebar {
+  background: transparent;
+  border-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 10px;
+  right: 22px;
+}
+
+#btnSidebar i {
+  margin-right: -25px;
+  font-size: 14px;
+}
+#btnSidebar :after {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #0069d9;
+  border-radius: 5px;
+}
+
+#btnSidebar :hover:after {
+  background: orange;
+}
+
+
+
+#btnSidebar.active {
+  margin-right: -30px;
+}
+#mySidebar.active {
+  margin-left: -250px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+@media (max-width: 990px) {
+  #mySidebar {
+    margin-left: -250px;
+  }
+  #mySidebar.active {
+    margin-left: 0;
+  }
+}
+
+hr {
+  width: 20%;
+}
+#allPage h1,
+p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

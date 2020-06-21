@@ -7,223 +7,316 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io//apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"
-    />
-    <link rel="stylesheet" href="thumbnail-gallery.css" />
-
-    <title>Hello, world!</title>
+    <!-- external CSS -->
+    <link rel="stylesheet" href="dnbtd.css" />
+    <title>Địa ngục biến tướng đồ</title>
   </head>
-  <body>
-    <div class="container gallery-container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          <img
-            src="/images/lotus.jpg"
-            class="rounded-circle"
-            width="30"
-            height="30"
-            alt=""
-          />
-          Around The World</a
+  <body data-spy="scroll" data-target="#mySidebar" data-offset="2">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-warning shadow-sm rounded"
+      id="navbar1"
+    >
+      <img
+        src="images/lotus.jpg"
+        class="rounded-circle"
+        width="30"
+        height="30"
+        alt=""
+      />
+      <a class="navbar-brand ml-1" href="#"> Địa ngục biến tướng đồ</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="dia-nguc-bien-tuong-do.html">Link</a>
+          </li>
+        </ul>
+       
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <div class="container-fluid pl-0 wrapper">
+      <!-- sidebar -->
+      <div class="d-sm-block mt-1 list-group" id="mySidebar">
+        <h4 class="px-3 my-2 ">
+          Menu Title
+        </h4>
+
+        <a class="list-group-item list-group-item-action" href="#list-item-1"
+          >Item 1</a
         >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+        <a class="list-group-item list-group-item-action" href="#list-item-2"
+          >Item 2</a
         >
-          <span class="navbar-toggler-icon"></span>
+        <a class="list-group-item list-group-item-action" href="#list-item-3"
+          >Item 3</a
+        >
+        <a class="list-group-item list-group-item-action" href="#list-item-4"
+          >Item 4</a
+        >
+      </div>
+      <!-- sidebar -->
+
+      <!-- button sidebar -->
+      <div class="custom-menu">
+        <button type="button" id="btnSidebar" class="btn btn-primary">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          <span class="sr-only">Toggle Menu</span>
         </button>
+      </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
+      <!-- button sidebar -->
+      <div class="row flex-xl-nowrap ">
+        <!-- main -->
+        <main
+          role="main"
+          class="col-12 col-md-9 col-xl-9 py-md-3 pl-md-5 px-5"
+          id="main"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center pt-3 pb-2 mb-3 border-bottom"
+          >
+            <h1 class="h2">Dashboard</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <div class="btn-group mr-2">
+                <button class="btn btn-sm btn-outline-secondary">Share</button>
+                <button class="btn btn-sm btn-outline-secondary">Export</button>
+              </div>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="text-justify" id="allPage">
+            <div class="page" id="list-item-1">
+              <h1>Cần tu thập thiện thì được sanh thiên</h1>
+              <a href="images/dnbtd/1.png"
+                ><img
+                  src="images/dnbtd/1.png"
+                  class="img-responsive img-thumbnail rounded"
+                  alt="1"
+                  height="300px"
+                  width="300px"
+              /></a>
+              <p>
+                Người một đời tu thiện tích đức thì lâm chung được vãng sanh
+                Thiên đạo, hưởng Thiên phước. Tu thiện tích đức nhưng ít nhất
+                phải đầy đủ tiêu chuẩn của thập thiện. Cái gì gọi là thập thiện?
+              </p>
+              <ul>
+                <li>Thân: không sát sanh, không trộm cắp, không tà dâm.</li>
+                <li>
+                  Miệng: không vọng ngữ (nói dối), không ỷ ngữ (nói thêu dệt),
+                  không lưỡng thiệt (nói lưỡi hai chiều), không ác khẩu (nói lời
+                  xấu ác).
+                </li>
+                <li>Ý: không tham, không sân, không si.</li>
+              </ul>
+              <hr class="my-3 border-bottom" />
+            </div>
+            <div class="page" id="list-item-2">
+              <h1>Giữ gìn ngũ giới chẳng mất thân người</h1>
+              <a href="images/dnbtd/2.png"
+                ><img
+                  src="images/dnbtd/2.png"
+                  class="img-responsive img-thumbnail rounded"
+                  alt="1"
+                  height="300px"
+                  width="300px"
+              /></a>
+              <p>
+                Phật dạy thân người khó được giống như rùa biển gặp khúc cây có
+                lỗ, lại nói một khi mất thân người vạn kiếp khó được lại. Làm
+                thế nào đời sau chắc chắn có thể được lại thân người, điều kiện
+                căn bản nhất là phải tu trì đầy đủ Ngũ Giới. Cái gì gọi là Ngũ
+                Giới? Chẳng sát là Nhân; chẳng trộm là Nghĩa; chẳng tà dâm là
+                Lễ; chẳng nói dối là Tín; chẳng uống rượu thì tâm thường trong
+                trẻo, chí ngưng lặng, thần chẳng hôn mê nên lý hiện, tức là Trí.
+                Trì trọn Ngũ Giới chẳng đọa tam đồ (địa ngục, ngạ quỷ, súc
+                sinh), luôn sanh trong nhân đạo. Còn như giàu sang nghèo hèn đều
+                do tạo tác thiện ác nhiều ít mà định.
+              </p>
+              <hr class="my-3 border-bottom" />
+            </div>
+            <div class="page" id="list-item-3">
+              <h1>Tạo tác thập ác hồn quy địa phủ</h1>
+              <a href="images/dnbtd/3.png"
+                ><img
+                  src="images/dnbtd/3.png"
+                  class="img-responsive img-thumbnail rounded"
+                  alt="1"
+                  height="300px"
+                  width="300px"
+              /></a>
+              <p>
+                Cái gì gọi là thập ác, phản diện của thập thiện tức là thập ác.
+                Đời người chỉ có mấy mươi năm, trong một đời nếu không biết tu
+                học thiện nghiệp, không minh bạch nhân quả sự lý, không biết tu
+                thiện tích đức, thoáng qua vô thường đã đến hồn quy địa phủ, hối
+                hận đã trễ.
+              </p>
+              <hr class="my-3 border-bottom" />
+            </div>
+            <div class="page" id="list-item-4">
+              <h1>Vô thường chợt đến hối đã không kịp</h1>
+              <a href="images/dnbtd/4.png"
+                ><img
+                  src="images/dnbtd/4.png"
+                  class="img-responsive img-thumbnail rounded"
+                  alt="1"
+                  height="300px"
+                  width="300px"
+              /></a>
+              <p>
+                Con người đối với thân mình, nếu ở trong một ngày mà nói thì
+                không gì quan trọng hơn là sự đói khát. Ai nấy cần phải lo ăn
+                uống đầy đủ. Nếu ở trong một năm mà nói thì không gì quan trọng
+                hơn sự lạnh nóng, ai nấy đều cần có y phục đầy đủ. Nếu lấy trọn
+                đời mà nói thì không gì quan trọng hơn là sự sanh tử. Thế mà lại
+                không dự bị, tại sao quá ngu mê như thế? Khi Vô Thường Phán Quan
+                đến thanh toán, lúc này đại mộng mới tỉnh. Lúc sanh tiền đã tạo
+                tác đủ thứ, sau khi chết mỗi thứ đều phải thanh toán.
+              </p>
+              <hr class="my-3 border-bottom" />
+            </div>
+          </div>
+        </main>
+        <!-- main -->
+        <!-- right bar -->
+        <div class="bg-light d-none d-sm-block col-md-3 col-xl-3 list-group right-bar">
+          
+            <h4 class="px-3 py-2 bg-primary text-white mb-0">
+              Video link
+            </h4>
+          
+
+          <div class="list-group-item list-group-item-action">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item rounded"
+                src="https://www.youtube.com/embed/HnLwNvTDKj4"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="mt-2">
               <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+                href="https://www.youtube.com/watch?v=HnLwNvTDKj4"
+                target="_blank"
               >
-                Dropdown
+                <span class="text-dark"
+                  >Bộ phim Đến vì bạn phần 1 (Coming for you)</span
+                >
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
+            </div>
+          </div>
+          <div class="list-group-item list-group-item-action">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item rounded"
+                src="https://www.youtube.com/embed/HaUoCRDE2Nk"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="mt-2">
               <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
+                href="https://www.youtube.com/watch?v=HaUoCRDE2Nk"
+                target="_blank"
               >
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-primary my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </nav>
-
-      <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">
-        Dia nguc bien tuong do
-      </h1>
-
-      <hr class="mt-2 mb-5" />
-
-      <h1>Bootstrap 3 Gallery</h1>
-
-      <p class="page-description text-center">
-        Thumbnails With Title And Description
-      </p>
-
-      <div class="tz-gallery">
-        <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <a class="lightbox" href="#">
-                <img class="img-fluid" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="Park" />
+                <span class="text-dark"
+                  >Bộ phim Đến vì bạn phần 2 (Coming for you 2)</span
+                >
               </a>
-              <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <a class="lightbox" href="#">
-                <img class="img-fluid" src="https://source.unsplash.com/M185_qYH8vg/400x300"" alt="Bridge" />
-              </a>
-              <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <a class="lightbox" href="../images/tunnel.jpg">
-                <img src="../images/tunnel.jpg" alt="Tunnel" />
-              </a>
-              <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <a class="lightbox" href="../images/coast.jpg">
-                <img src="../images/coast.jpg" alt="Coast" />
-              </a>
-              <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <a class="lightbox" href="../images/rails.jpg">
-                <img src="../images/rails.jpg" alt="Rails" />
-              </a>
-              <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <a class="lightbox" href="../images/traffic.jpg">
-                <img src="../images/traffic.jpg" alt="Traffic" />
-              </a>
-              <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- right bar -->
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script>
-      baguetteBox.run(".tz-gallery");
-    </script> -->
   </body>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace();
+  </script>
+
+  <!-- external script -->
+  <script src="dnbtd.js"></script>
 </html>

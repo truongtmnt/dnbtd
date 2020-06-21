@@ -86,4 +86,6 @@ $(function () {
   $("#jumboBtn").click(function () {
     $("#hello").animate({ fontSize: "60px", opacity: "0.9" }, 1000);
   });
+
 });
+
