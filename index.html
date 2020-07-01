@@ -38,10 +38,11 @@
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+
     <!-- external CSS -->
     <link rel="stylesheet" href="css-index.css" />
     <title>Around the World</title>
@@ -57,7 +58,7 @@
         height="30"
         alt=""
       />
-      <a class="navbar-brand" href="#"> Around The World</a>
+      <a class="navbar-brand" href="#">&nbsp; Around The World</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -97,11 +98,11 @@
     <!-- navbar -->
 
     <!-- jumbotron -->
-    <div class="jumbotron jumbotron-fluid bg-dark">
+    <div class="jumbotron jumbotron-fluid mb-0">
+      <!-- /.container -->
       <div class="jumbotron-background">
         <img src="images/BingImageOfTheDay_20200604.jpg" class="blur" />
       </div>
-
       <div class="container text-white text-center">
         <h1 class="display-4" id="hello">Hello, world!</h1>
         <p class="lead">
@@ -116,12 +117,14 @@
         <a class="btn btn-primary btn-lg" id="jumboBtn" href="#" role="button"
           >Learn more</a
         >
+
+        <!-- /.container -->
       </div>
-      <!-- /.container -->
     </div>
+
     <!-- /.jumbotron -->
 
-    <div class="section-header text-center">
+    <div class="section-header text-center py-5">
       <h2 class="display-4">This is an image gallery</h2>
     </div>
     <!-- gallery image from here -->
@@ -205,7 +208,7 @@
 
     <!-- footer -->
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-      <div class="container text-center">
+      <div class="container text-center text-light">
         <small>Copyright &copy; Your Website</small>
       </div>
     </footer>
@@ -214,6 +217,21 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <!-- external script -->
     <script src="javascript.js"></script>
   </body>

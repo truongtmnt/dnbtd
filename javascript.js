@@ -14,9 +14,13 @@ $(document).ready(function () {
     var imgName;
     imgName = $(this).attr("src");
     $("body").css("background-image", "url(" + imgName + ")");
+    $(".jumbotron-background").remove();
+    $(".jumbotron").css("background-color","transparent")
   });
+
 });
 
+// animate the under line
 $(document).ready(function () {
   $(".section-header h2").mouseover(function () {
     $(this).css("animation-play-state", "paused");
@@ -83,9 +87,8 @@ $(function () {
 });
 
 $(function () {
-  $("#jumboBtn").click(function () {
-    $("#hello").animate({ fontSize: "60px", opacity: "0.9" }, 1000);
-  });
+
+
 
 });
 
