@@ -15,9 +15,8 @@ $(document).ready(function () {
     imgName = $(this).attr("src");
     $("body").css("background-image", "url(" + imgName + ")");
     $(".jumbotron-background").remove();
-    $(".jumbotron").css("background-color","transparent")
+    $(".jumbotron").css("background-color", "transparent");
   });
-
 });
 
 // animate the under line
@@ -60,10 +59,10 @@ function randomDate(start, end) {
 $(function () {
   var imgName = "BingImageOfTheDay_";
   var x;
-  x = randomDate(new Date(2020, 4, 23), new Date());
+  x = randomDate(new Date(2020, 4, 23), new Date(2020, 6, 01));
 
   $(".card img").each(function () {
-    x = randomDate(new Date(2020, 4, 23), new Date());
+    x = randomDate(new Date(2020, 4, 23), new Date(2020, 6, 01));
 
     $(this).attr("src", "images/" + imgName + x + ".jpg");
   });
@@ -86,9 +85,4 @@ $(function () {
   };
 });
 
-$(function () {
-
-
-
-});
-
+$(function () {});

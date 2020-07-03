@@ -155,15 +155,6 @@ $(function () {
     }
   });
 
-  // scroll to bottom
-  $(window).scroll(function () {
-    var position = $(window).scrollTop();
-    var bottom = $(document).height() - $(window).height();
-    if (position == bottom) {
-      // $("#allPage").append("<div class="page"><h1>...</h1><a href="images/dnbtd/1.png"><img class="img-responsive img-thumbnail rounded mx-auto d-block"alt="1"/></a><p>...</p> <hr/></div>")
-    }
-  });
-
   // ------asign contentt for #allPage
   var j = 1;
   var itemName = "";
@@ -187,7 +178,7 @@ $(function () {
       .attr("src", "images/dnbtd/" + j + ".png");
 
     //-------get name for side bar list
-    itemName = j +". "+$(this).children("h1").html();
+    itemName = j + ". " + $(this).children("h1").html();
     $("#mySidebar a")
       .eq(j - 1)
       .html(itemName);
@@ -207,11 +198,78 @@ $(function () {
 
     $("hr").each(function () {
       var $this = $(this),
-        from_top = $this.offset().top - scroll_top -100;
-        // alert(from_top);
+        from_top = $this.offset().top - scroll_top - 100;
+      // alert(from_top);
       if (from_top < 300 && from_top > 0) {
         $this.css("width", 100 - (from_top / 300) * 100 + "%");
       }
     });
   }
+
+  // window scroll to bottom
+
+  $(window).scroll(function () {
+    if (
+      $(window).scrollTop() + $(window).height() >
+      $(document).height() - 10
+    ) {
+      //reach bottom
+      let amountLeft = contents.length - $("#allPage div").length;
+      if (amountLeft >= 5) {
+        add_content(5);
+      } else {
+        add_content(amountLeft);
+      }
+    }
+  });
+  // scroll side bar
+  $("#mySidebar").scroll(function () {
+    if (
+      $(this).scrollTop() + $(this).innerHeight() >=
+      $(this)[0].scrollHeight
+    ) {
+      // reach end
+      let amountLeft = contents.length - $("#allPage div").length;
+      if (amountLeft >= 5) {
+        add_content(5);
+      } else {
+        add_content(amountLeft);
+      }
+    }
+  });
+  // function add more content when scroll to bottom
+  function add_content(xTimes) {
+    for (i = 1; i <= xTimes; i++) {
+      $("#allPage").append(
+        "<div class=page><h1>...</h1><a href='images/dnbtd/1.png'><img class='img-responsive img-thumbnail rounded mx-auto d-block box' alt='1'/></a><p>...</p> <hr/></div>"
+      );
+      $("#mySidebar").append(
+        "<a class='list-group-item list-group-item-action' href='#'>Item 5</a>"
+      );
+      var count = $("#allPage div").length;
+      var $selectedDiv = $('#allPage div[class="page"]').last();
+      $selectedDiv.attr("id", "list-item-" + count); // set id for page div
+      $selectedDiv.children("h1").html(contents[count - 1].heading); //contetnt for h1 in page
+      $selectedDiv.children("p").html(contents[count - 1].content); //content for p in page
+      $selectedDiv.children("a").attr("href", "images/dnbtd/" + count + ".png"); //href for a tag in page
+      // ------img address in page
+      $selectedDiv
+        .children("a")
+        .children("img")
+        .attr("src", "images/dnbtd/" + count + ".png");
+      //-------get name for side bar list
+      var itemName2 = count + ". " + $selectedDiv.children("h1").html();
+      $("#mySidebar a")
+        .eq(count - 1)
+        .html(itemName2);
+      $("#mySidebar a")
+        .eq(count - 1)
+        .attr("href", "#" + "list-item-" + count);
+    }
+  }
+
+  // BURN image
+  $("#allPage img").hover(function () {
+    $(this).toggleClass("burn");
+  });
 });
