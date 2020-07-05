@@ -1,14 +1,10 @@
-function loadDoc() {
-    
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("demo").innerHTML =
-        this.responseText;
-      }
-    };
-    xhttp.open("GET", "/ajax_info.txt", true);
-    xhttp.send();
-  }
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  // document.getElementById("button1").style.width = "0";
+  // document.getElementById("main").style.marginLeft = "250px";
+}
 
- 
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  // document.getElementById("main").style.marginLeft= "0";
+}

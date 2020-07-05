@@ -5,8 +5,8 @@
   --forth-color: #fcf876;
   --fifth-color: #111d5e;
   --sixth-color: #ffcd3c;
-  --seventh-color:#ffe277;
-  --eight-color:#ffb367;
+  --seventh-color: #ffe277;
+  --eight-color: #ffb367;
   --font1: "Varela Round", sans-serif;
   --font2: "Prompt", sans-serif;
   --font3: "Montserrat" sans-serif;
@@ -23,20 +23,60 @@ body {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
 }
 
-#mySidebar {  
+.sidebar {
   background: var(--forth-color) var(--main-color);
-  transition: all 0.3s;
-  min-width: 250px;
-  max-width: 250px;
   height: calc(100vh);
-  position: -webkit-sticky; /* for Safari */
+  width: 0px;
   position: sticky;
+  z-index: 2;
   top: 0;
-  align-self: flex-start;
-  z-index: 10;
+  left: 0;
+  transition: all 0.3s cubic-bezier(1, 0, 0, 1);
+  padding-top: 0.6rem;
   overflow: auto;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+  /* opacity: 0.1; */
 }
+
+.sidebar a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: -5px;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  position: fixed;
+  top: 60px;
+  left: -10px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  z-index: 1;
+  color: white;
+  transition: 0.4s;
+}
+.openbtn:hover {
+  color: var(--second-color);
+}
+.openbtn:focus {
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
 #right-bar .list-group-item {
   background: var(--eighth-color) var(--main-color);
 }
@@ -44,86 +84,19 @@ body {
 #right-bar {
   background: var(--forth-color) var(--main-color);
   align-self: flex-start;
+  margin-left: auto;
   padding-right: 0;
+  max-width: 18%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* @media (min-width: 1200px) {
-  #right-bar.col-xl-3 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 23%;
-    flex: 0 0 23%;
-    max-width: 23%;
-  }
-}
-@media (min-width: 768px) {
+@media screen and (max-width: 990px) {
   #right-bar {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 15%;
-    flex: 0 0 15%;
-    max-width: 15%;
+    max-width: 100%;
+    width: 85%;
+    margin: 1rem auto;
+    flex: 0 0 85%;
   }
-} */
-#btnSidebar {
-  align-self: flex-start;
-  display: inline-block;
-  margin-right: 0;
-}
-button {
-  -webkit-transition: 0.3s all ease;
-  -o-transition: 0.3s all ease;
-  transition: 0.3s all ease;
-}
-button:hover,
-button:focus {
-  text-decoration: none !important;
-  outline: none !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-
-.custom-menu {
-  /* display: flex; */
-  position: sticky;
-  top: 0;
-  align-self: flex-start;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  /* margin-right: -10px; */
-}
-#btnSidebar {
-  background: transparent;
-  border-color: transparent;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: relative;
-  margin-top: 10px;
-  right: 22px;
-}
-
-#btnSidebar i {
-  margin-right: -25px;
-  font-size: 14px;
-}
-#btnSidebar :after {
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: "";
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background: orange;
-  border-radius: 5px;
-}
-
-#btnSidebar :hover:after {
-  background: #0069d9;
 }
 .list-group .active {
   background-color: var(--third-color);
@@ -133,27 +106,16 @@ button:focus {
   background-image: var(--main-color);
 }
 
-#mySidebar.active {
-  margin-left: -250px;
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
 
-#main.active {
-  padding-left: 100px !important;
-  padding-right: 100px !important;
-}
-
-@media (max-width: 990px) {
-  #mySidebar {
-    margin-left: -250px;
-  }
-  #mySidebar.active {
-    margin-left: 0;
-  }
-  #main.active {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-}
 @media (max-width: 600px) {
   #allPage h1 {
     text-align: center;
@@ -193,18 +155,17 @@ hr:after {
 }
 
 #main {
-  position: relative;
-  /* z-index: 0; */
   background: var(--forth-color) var(--main-color);
   color: #104e23;
   margin: 1rem auto;
   border: 4px solid #3f7963;
   outline: 3px solid #3f7963;
   outline-offset: -10px;
-  width: calc(100% - 36px);
   padding: 16px;
-  margin-left: 0rem;
   font-size: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07);
 }
 
 #main .heading {
@@ -248,7 +209,7 @@ hr:after {
 
 #allPage h1,
 #allPage p {
-  z-index: 1;
+  /* z-index: 1; */
   transition: all 3s ease-in-out;
 }
 #allPage h1 {
@@ -297,17 +258,8 @@ hr:after {
 
 .page img {
   margin-top: 3rem;
-  transition: all 1s linear;
 }
 .box {
-  box-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
-    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
-    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
-    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
-    0 20px 20px rgba(0, 0, 0, 0.15);
-}
-
-.burn {
   box-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
     0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
     0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
@@ -326,8 +278,8 @@ hr:after {
   /* transparent black */
   background: rgba(0, 0, 0, 0.7);
   /* middle layer, i.e. appears below the sidebar */
-  z-index: -2;
-  opacity: 0;
+  z-index: 1;
+  opacity: 1;
   /* animate the transition */
   transition: all 0.5s ease-in-out;
 }
@@ -335,6 +287,7 @@ hr:after {
 .overlay.active {
   display: block;
   opacity: 1;
+  z-index: 0;
 }
 
 /* fire effect */

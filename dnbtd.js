@@ -145,14 +145,36 @@ var contents = [
   },
 ];
 
-// -----side bar buttun
+// -----side bar button get curtain div
 $(function () {
-  $("#btnSidebar").click(function () {
-    $("#mySidebar").toggleClass("active");
-    $("#main").toggleClass("active");
+  $(".openbtn").click(function () {
     if ($(window).width() < 600) {
       $(".overlay").toggleClass("active");
     }
+  });
+  // -----side bar button
+  $(".openbtn").click(function () {
+    //hide open button
+    if ($("#mySidebar").scrollTop() < 10) {
+      $(".openbtn").css("left", "-10px");
+    } else {
+      $(".openbtn").css("left", "238px");
+    }
+    // action show sidebar
+    var sidebarWidth = parseInt($("#mySidebar").css("width").replace("px", ""));
+    var sidebarOpen = sidebarWidth > 10 ? true : false;
+    if (!sidebarOpen) {
+      $("#mySidebar").css("width", "250px");
+      $(this).css("left", "238px");
+    } else {
+      $("#mySidebar").css("width", "0px");
+      $(this).css("left", "-10px");
+    }
+  });
+
+  $(".closebtn").click(function () {
+    $("#mySidebar").css("width", "0");
+    $(".openbtn").css("left", "-10px");
   });
 
   // ------asign contentt for #allPage
@@ -166,7 +188,7 @@ $(function () {
       .html(contents[j - 1].heading); //contetnt for h1 in page
     $(this)
       .children("p")
-      .html(contents[j - 1].content); //content fpr p in page
+      .html(contents[j - 1].content); //content for p in page
     $(this)
       .children("a")
       .attr("href", "images/dnbtd/" + j + ".png"); //href for a tag in page
@@ -180,10 +202,10 @@ $(function () {
     //-------get name for side bar list
     itemName = j + ". " + $(this).children("h1").html();
     $("#mySidebar a")
-      .eq(j - 1)
+      .eq(j - 0)
       .html(itemName);
     $("#mySidebar a")
-      .eq(j - 1)
+      .eq(j - 0)
       .attr("href", "#" + "list-item-" + j);
     j++;
   });
@@ -215,28 +237,37 @@ $(function () {
     ) {
       //reach bottom
       let amountLeft = contents.length - $("#allPage div").length;
-      if (amountLeft >= 5) {
-        add_content(5);
+      if (amountLeft >= 3 && amountLeft > 0) {
+        add_content(3);
       } else {
         add_content(amountLeft);
       }
     }
   });
+
   // scroll side bar
   $("#mySidebar").scroll(function () {
+    //hide undide open button
+    if ($(this).scrollTop() < 10) {
+      $(".openbtn").css("left", "-10px");
+    } else {
+      $(".openbtn").css("left", "238px");
+    }
+
+    // reach end
     if (
       $(this).scrollTop() + $(this).innerHeight() >=
       $(this)[0].scrollHeight
     ) {
-      // reach end
       let amountLeft = contents.length - $("#allPage div").length;
-      if (amountLeft >= 5) {
-        add_content(5);
+      if (amountLeft >= 3) {
+        add_content(3);
       } else {
         add_content(amountLeft);
       }
     }
   });
+
   // function add more content when scroll to bottom
   function add_content(xTimes) {
     for (i = 1; i <= xTimes; i++) {
@@ -260,16 +291,11 @@ $(function () {
       //-------get name for side bar list
       var itemName2 = count + ". " + $selectedDiv.children("h1").html();
       $("#mySidebar a")
-        .eq(count - 1)
+        .eq(count - 0)
         .html(itemName2);
       $("#mySidebar a")
-        .eq(count - 1)
+        .eq(count - 0)
         .attr("href", "#" + "list-item-" + count);
     }
   }
-
-  // BURN image
-  $("#allPage img").hover(function () {
-    $(this).toggleClass("burn");
-  });
 });
