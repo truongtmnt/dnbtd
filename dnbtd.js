@@ -145,20 +145,14 @@ var contents = [
   },
 ];
 
-// -----side bar button get curtain div
+
 $(function () {
-  $(".openbtn").click(function () {
-    if ($(window).width() < 600) {
-      $(".overlay").toggleClass("active");
-    }
-  });
+  
   // -----side bar button
   $(".openbtn").click(function () {
-    //hide open button
-    if ($("#mySidebar").scrollTop() < 10) {
-      $(".openbtn").css("left", "-10px");
-    } else {
-      $(".openbtn").css("left", "238px");
+   // -----side bar button get curtain div
+    if ($(window).width() < 600) {
+      $(".overlay").toggleClass("active");
     }
     // action show sidebar
     var sidebarWidth = parseInt($("#mySidebar").css("width").replace("px", ""));
@@ -170,11 +164,19 @@ $(function () {
       $("#mySidebar").css("width", "0px");
       $(this).css("left", "-10px");
     }
+    //hide open button
+    if ($("#mySidebar").scrollTop() < 10) {
+      $(".openbtn").css("left", "-10px");
+    }
   });
 
   $(".closebtn").click(function () {
     $("#mySidebar").css("width", "0");
     $(".openbtn").css("left", "-10px");
+    // -----side bar button get curtain div
+    if ($(window).width() < 600) {
+      $(".overlay").toggleClass("active");
+    }
   });
 
   // ------asign contentt for #allPage
