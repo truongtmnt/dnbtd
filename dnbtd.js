@@ -128,16 +128,19 @@ var contents = [
       "Là địa ngục lạnh giá. Ở trong đó, gió buốt từng cơn thổi liên tiếp không dứt, khiến tội nhân lạnh thấu xương tủy, da thịt tê cứng nứt nẻ, máu mủ rướm ra rồi khô cứng lại như đá; tội nhân đau đớn vô ngần, kêu gào không thành tiếng nữa, mệt mỏi đến chết đi. <br>    Trong kinh Luật Dị Tướng nói: ném chúng sanh tới chỗ đông lạnh chết, thí như bắt cá đem cá còn sống để trong phòng lạnh đông lạnh chết, ngoài ra sau khi con người vừa tắt thở, lật đật đem người chết cho vào phòng lạnh, điều này thật là bất nhân. Sau khi chết đều đọa vào địa ngục này. Trong Ngọc Chuẩn Luận Khoa nói: ỷ thế hiếp người khiến cho lòng người run sợ cũng đọa vào địa ngục này. Ngày nay có rất nhiều bọn côn đồ dùng thủ đoạn hăm dọa, bức ép đối phương phải tuân theo. Những người này sau khi chết khó mà thoát khỏi ngục này. Người háo sắc, tham uống rượu và bất hiếu với cha mẹ cũng sẽ bị đày vào địa ngục này. <br>    Lại nữa: Lúc còn sống, kiếm sống bằng những việc khỏa thân, nhảy nhót gợi tình, hoặc tính thích khỏa thân mê hoặc người ta, sau khi chết sẽ vào “Hàn Băng địa ngục” để mà chịu cái lạnh không mảnh vải che thân.    ",
   },
   {
-    heading: "",
-    content: "",
+    heading: "Ngạ quỷ địa ngục",
+    content:
+      "Là địa ngục quỷ đói. <i>Nhất niệm sanh tâm khởi, bá vạn chướng môn khai</i>. Đọa vào địa ngục này đều do chủng chủng lòng tham bỏn sẻn, do tham dục sở tạo, không hành pháp bố thí. Nhìn thấy các ngạ quỷ chúng sanh phải chịu khổ đói khát, tự thiêu đốt thân, rất là khổ não, nước mắt như mưa, kêu khóc bi thảm, than thở bi ai, gian nan thống khổ như trong họa đồ vậy. Quan âm đại sĩ với lòng từ bi đến thí thực cứu khổ cứu nạn. Nếu trong lúc này mà có thể sanh lòng đại sám hối, tức có thể rất mau, thoát khỏi ngạ quỷ đạo.",
   },
   {
-    heading: "",
-    content: "",
+    heading: "Nùng huyết địa ngục",
+    content:
+      "Là địa ngục máu mủ. Trong địa ngục này tự nhiên có máu mủ tanh hôi nóng sôi sùng sục, tội nhân chạy tới chạy lui qua lại vì nóng quá, nên bị máu tanh nóng đốt từ chân lên đến đầu, thịt rữa ra chỉ còn xương, đau đớn kêu gào, không thể chịu nổi, vì tội cũ chưa hết nên chẳng thể chết được. <br> Ngọc Lịch nói: Lúc sanh tiền, kẻ ưa thích giết hại sanh linh động vật thì đọa vào địa ngục này, động vật bị giết hại quang cảnh thật là tàn nhẫn, máu chảy như nước, kêu rên đến chết. Đây thật là bi thảm. Nếu là con người, lẽ nào chúng ta không phẫn nộ, không báo thù chăng! Trong Ngọc Chuẩn Luận Khoa nói: Người âm mưu đoạt tài sản của kẻ khác, thí dụ như tính kế lừa gạt tiền tài của người già không biết chữ, khiến cho họ lẻ loi, ôm hận mà chết, đây đều là tạo tội đại cực ác, giống như loài quỷ hút máu vậy. Sau khi chết đọa vào địa ngục này đều phải trả nợ.    ",
   },
   {
-    heading: "",
-    content: "",
+    heading: "Phẫn niếu nê địa ngục",
+    content:
+      "Là địa ngục nước tiểu bùn phân. Khắp nơi trong cảnh địa ngục này toàn là phân, nước tiểu nhơ nhớt và đồng nóng, chẳng những mùi hôi thối khó ngửi không thể tả. Trong phân có dòi, dòi cứng như kim cang. Tội nhân ăn dòi, dòi vào trong thân, trước ăn cái môi, sau ăn cái lưỡi. Tiếp tục ăn cổ họng, tim, phổi, lá lách, ruột non, ruột già, gân; ăn hết tất cả máu thịt như thế trải qua vô lượng trăm ngàn năm mới hết. Nếu người lúc sanh tiền thích ăn ruột bao tử của heo bò dê chó, đã uống rượu say sưa, phạm lỗi lầm như ngũ nghịch với cha mẹ, xâm phạm thân hữu, gian dâm với vợ của kẻ khác, bỏ bê sự nghiệp, dùng lời thô lỗ mắng chửi người, v.v…, đều đọa địa ngục này. Tuy rằng ngày nay khoa học kỹ thuật phát đạt, vật chất văn minh, tương phản lại đạo đức của con người càng ngày càng đọa lạc. Trong đời này chúng ta muốn hướng lên trên hoặc là đọa xuống, tự mình phải nên phản tỉnh tư duy.",
   },
   {
     heading: "",
@@ -145,18 +148,40 @@ var contents = [
   },
 ];
 
-
 $(function () {
-  
+  // curtain when screen small
+  $(window).resize(function () {
+    let sidebarWidth = parseInt($("#mySidebar").css("width").replace("px", ""));
+    let sidebarOpen = sidebarWidth > 10 ? true : false;
+    if ($(window).width() < 600 && sidebarOpen) {
+      $(".overlay").addClass("active");
+    } else {
+      $(".overlay").removeClass("active");
+    }
+  });
+
+  // click overlay hide sidebar
+  $(".overlay").click(function () {
+    $(this).removeClass("active");
+    $("#mySidebar").css("width", "0px");
+    $(".openbtn").css("left", "-10px");
+  });
   // -----side bar button
   $(".openbtn").click(function () {
-   // -----side bar button get curtain div
-    if ($(window).width() < 600) {
-      $(".overlay").toggleClass("active");
-    }
     // action show sidebar
-    var sidebarWidth = parseInt($("#mySidebar").css("width").replace("px", ""));
-    var sidebarOpen = sidebarWidth > 10 ? true : false;
+
+    // -----side bar button get curtain div
+    if ($(window).width() < 600) {
+      var sidebarWidth = parseInt(
+        $("#mySidebar").css("width").replace("px", "")
+      );
+      var sidebarOpen = sidebarWidth > 10 ? true : false;
+      if (!sidebarOpen) {
+        $(".overlay").addClass("active");
+      } else {
+        $(".overlay").removeClass("active");
+      }
+    }
     if (!sidebarOpen) {
       $("#mySidebar").css("width", "250px");
       $(this).css("left", "238px");
@@ -219,7 +244,6 @@ $(function () {
   });
   function hr_scroll() {
     var scroll_top = $window.scrollTop();
-
     $("hr").each(function () {
       var $this = $(this),
         from_top = $this.offset().top - scroll_top - 100;
@@ -235,7 +259,7 @@ $(function () {
   $(window).scroll(function () {
     if (
       $(window).scrollTop() + $(window).height() >
-      $(document).height() - 10
+      $(document).height() - 600
     ) {
       //reach bottom
       let amountLeft = contents.length - $("#allPage div").length;
@@ -255,7 +279,6 @@ $(function () {
     } else {
       $(".openbtn").css("left", "238px");
     }
-
     // reach end
     if (
       $(this).scrollTop() + $(this).innerHeight() >=

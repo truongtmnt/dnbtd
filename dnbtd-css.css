@@ -120,8 +120,9 @@ body {
   #allPage h1 {
     text-align: center;
   }
-  .row {
-    margin-right: -5px !important;
+  .container-fluid {
+    padding-left: 10px;
+    padding-right: 5px;
   }
 }
 
@@ -271,7 +272,7 @@ hr:after {
 .overlay {
   display: none;
   position: fixed;
-  top: -20px;
+  top: 0px;
   /* full screen */
   width: 100vw;
   height: 120vh;
