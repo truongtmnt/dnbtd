@@ -213,7 +213,7 @@ $(function () {
     } else $("#right-bar label").html("read more");
   });
   // add more pagination
-  addMorePagination(3);
+  addMorePagination(2);
   function addMorePagination(numberOfNew) {
     for (i = 1; i <= numberOfNew; i++) {
       $(".pagination ").each(function () {
@@ -237,6 +237,10 @@ $(function () {
     if (nameLabel == "Previous" && fileNumber == 1) {
       $(this).parent("li").addClass("disabled");
     }
+    if (nameLabel == "Next" && fileNumber == 5) {
+      $(this).parent("li").addClass("disabled");
+    }
+
     // link for nameTag
     if (nameTag == 1) {
       $(this).attr("href", "index.html");
