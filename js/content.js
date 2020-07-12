@@ -20,7 +20,7 @@ var contents = [
       "Phật dạy thân người khó được giống như rùa biển gặp khúc cây có lỗ, lại nói một khi mất thân người vạn kiếp khó được lại. Làm thế nào đời sau chắc chắn có thể được lại thân người, điều kiện căn bản nhất phải tu trì đầy đủ Ngũ Giới. Cái gì gọi là ngũ giới: không sát sanh, không trộm cắp, không tà dâm, không vọng ngữ, không uống rượu. Còn như giàu sang nghèo hèn đều do tạo tác thiện ác nhiều ít mà định. Ngạn ngữ nói: “Dục tri tiền thế nhân, kim sanh thọ giả thị, dục tri lai thế quả, kim sanh tạo giả thị”. Chúng ta phải rõ ràng minh bạch cái đạo lý này.",
   },
   {
-    heading: "Tạo tác thập ác hồn quy địa phủ",
+    heading: "Tạo tác thập ác, hồn quy địa phủ",
     content:
       "Cái gì gọi là thập ác, phản diện của thập thiện tức là thập ác. Đời người chỉ có mấy mươi năm, trong một đời nếu không biết tu học thiện nghiệp, không minh bạch nhân quả sự lý, không biết tu thiện tích đức, thoáng qua vô thường đã đến hồn quy địa phủ, hối hận đã trễ.",
   },
@@ -36,7 +36,7 @@ var contents = [
       "Tất cả cảnh tượng trong địa ngục hoàn toàn do nghiệp lực của mình chiêu cảm. Người không đầy đủ cái nhân địa ngục thì không cảm thọ cảnh giới âm u kinh sợ, cũng chẳng phải là diêm la vương trừng phạt tội nhân tàn khốc.",
   },
   {
-    heading: "ĐIỆN THỨ NHẤT LÀ TẦN QUẢNG VƯƠNG ",
+    heading: "ĐIỆN THỨ NHẤT:<i> TẦN QUẢNG VƯƠNG</i> ",
     content:
       "Điện này làm chủ việc khỏe mạnh, ốm đau, sinh tử, cát hung của trần gian, và việc lãnh nhận tội hình tại âm gian. Tất cả tội hồn bị áp giải đến chỗ điện thứ nhất Tần Quảng Vương tiếp nhận phân xử. Y theo tội hình nặng nhẹ, đày đi các ngục để thọ tội tiêu nghiệp. Người thiện sau khi thọ mệnh được tiếp dẫn siêu sinh. Nếu công và tội của người bằng nhau thì miễn thọ tội, có thể trực tiếp chuyển đến điện thứ mười đi đầu thai. Người làm điều thiện ít, điều ác nhiều thì được áp giải đến đài cao, phía bên trái điện, gọi là đài gương “Nghiệt Kính Đài”, để nhìn vào đó liền thấy rõ mọi việc tốt xấu hồi còn tại thế, sau đó giải đến điện thứ hai để vào ngục chịu tội. ",
   },
@@ -62,7 +62,7 @@ var contents = [
       "Làm các ngành các nghề không tuân thủ đạo đức, tạo vô lượng nghiệp đắc vô biên tội. Cái tội căn của con người là do Tham Sân Si tam độc. Ngày nay đạo đức không còn, đều do không tuân theo lời dạy bảo của thánh hiền. Rất nhiều người chỉ biết bề ngoài của tôn giáo, nhưng không biết rõ tôn giáo. Tinh thần chân chánh của tôn giáo là giáo dục đạo đức, cho nên chỉ trọng hình thức, mà không trọng kết quả thật chất của nó, khiến cho vô số chúng sanh càng mê hoặc, càng đọa lạc.",
   },
   {
-    heading: "Học không an đạo Hổ thẹn thánh hiền",
+    heading: "Học không an đạo<br>Hổ thẹn thánh hiền",
     content:
       "Học sách thánh hiền mục đích để làm gì? Là chí hướng học theo thánh hiền, để tự sửa mình rồi cùng giáo dục hóa dân. Do vậy sách Lễ Ký mới đặc biệt nhấn mạnh: <em>“Kiến quốc quân dân, giáo học vi tiên”</em> (xây dựng đất nước, cai trị nhân dân, giáo học làm đầu).</br> </br>Nếu không thể y giáo phụng hành, làm gương mẫu, trọn hết nghĩa vụ giáo dục của mình, thì vẫn đọa vào trong danh lợi. Sau khi chết, trước tiên đều phải đến đây bổ túc thọ giáo, xong rồi đày qua địa ngục khác chịu tội tiêu nghiệp.",
   },
@@ -72,7 +72,7 @@ var contents = [
       "Người gánh vác công việc giáo dục xã hội tạo phục vụ giáo dục quần chúng, phải niệm niệm vì chúng sanh tạo phước. Nếu từ trong mưu lợi, không những phá hoại hình tướng bề ngoài cũng cô phụ lòng tốt của tín chúng. Thí dụ như vì người tụng kinh bái sám bỏ sót chữ hoặc sót trang hoặc không chuyên không thành. Sau khi chết trước tiên phải bổ túc kinh tiêu nghiệp, xong rồi thì đày qua địa ngục khác, chịu tội tiêu nghiệp.",
   },
   {
-    heading: "Ngàn cân dầu đèn kia soi tỏ<br> Kẻ bất lương lòng tối khó tường",
+    heading: "Ngàn cân dầu đèn kia soi tỏ<br>Kẻ bất lương lòng tối khó tường",
     content:
       "<i>Thanh đăng như đậu thiên cân du, nan chiếu hắc tâm vô đạo nhân.</i><br> Kẻ tài năng trí thức có thể tạo phước cho quần chúng cũng có thể tổn hại chúng sanh, mượn danh hiệu của tôn giáo, không thể phụng trì kinh giới, y giáo phụng hành, một ngày kia vô thường đến khổ báo không kham nổi, càng huống chi là:<br> <em>&nbsp;    Thí một hạt gạo <br>&nbsp;    Lớn hơn núi tu di.<br>&nbsp;    Đời này không liễu đạo<br>&nbsp;    Dư báo còn phải mang lông đội sừng trả.</em> ",
   },
@@ -83,12 +83,12 @@ var contents = [
       "Tùy theo sức của nghiệp lực lưu chuyển. Lúc sanh tiền đã tạo tất cả, bây giờ đọa vào cảnh địa ngục nào, phải chịu tội hình nào, tự mình đều phải thọ tội.",
   },
   {
-    heading: "Bảo trụ địa ngục",
+    heading: "BẢO TRỤ ĐỊA NGỤC",
     content:
       "Là địa ngục ôm cột. Ngạn ngữ nói: <em>“bảo noãn tư dâm dục”</em>, nghĩa là no ấm nghĩ dâm dục. Ngày nay tà dâm lan tràn, người thọ tội báo này là lúc sanh tiền rất ưa thích dâm dục như tà dâm hiếp dâm, buôn bán các loại khiêu dâm như sách, tạp chí, băng video và đĩa CD, VCD, DVD, hoặc tự mình quay phim hoặc cất giữ cùng nhau chiếu xem v.v... Sau khi chết đều đọa địa ngục này thân ôm lấy cột đồng cháy đỏ. Toàn thân máu thịt cháy khét, chết rồi lại sống, sống rồi lại chết. Thống khổ không thể tả. Sau khi đã thọ báo, phần nhiều đọa vào súc sanh. Súc sanh đã thọ xong, được thân người phần nhiều bần tiện đoản mạng, hoặc sanh nơi hoàn cảnh ác liệt.",
   },
   {
-    heading: "Hỏa sàng địa ngục",
+    heading: "HỎA SÀNG ĐỊA NGỤC",
     content:
       "Là địa ngục giường lửa. Hỏa Sàng Địa Ngục giống như người hiện nay dùng miếng sắt để nướng thịt. Trong kinh Luật Dị Tướng nói: Người phạm tà dâm <em>“trai ôm cột đồng, gái nằm giường sắt”.</em> <br>    Như trong kinh Chánh Pháp Niệm Xứ nói: Người ưa thích sát sanh, thiêu nướng chiên nấu, kho chưng thịt của chúng sanh hoặc dẫm đạp kiến côn trùng. Sau khi chết đều đọa vào địa ngục này, cái khổ của tội hình, thời gian rất dài, không thể tưởng tượng được. Tội báo này thọ xong, còn phạm những tội nghiệp khác lại đọa vào địa ngục khác đều phải chịu tội, cho đến khi tội báo thọ hết.    ",
   },
@@ -98,47 +98,47 @@ var contents = [
       "Sở Giang Vương làm chủ điện thứ hai, làm chủ Hoạt Đại Địa Ngục, đến đây thọ tội đều do cái nhân sát sanh lúc sanh tiền tạo tác sát nghiệp vô lượng vô biên chịu lấy tội hình giống như lúc sanh tiền đã tạo cái nghiệp này giết nó như thế nào thì phải bị giết như thế ấy. Trong kinh nói người đọa vào Hoạt Đại Địa Ngục là lúc sanh tiền vui thích sát sanh đã tạo tội nghiệp nếu có phân biệt Thượng Trung Hạ thì địa ngục này cũng có phân biệt Thượng Trung Hạ. Nói chung là tất cả đều tùy theo nghiệp lực nặng nhẹ chịu một chỗ thọ báo hoặc nhiều chỗ thọ báo cho đến 16 chỗ, nếu còn có dư tội lại đọa vào địa ngục khác thọ dư báo. Đến trăm ngàn năm mới hết, mà địa ngục này có 16 chỗ khác nhau. Mỗi một chỗ so với mỗi một chỗ càng thống khổ giống như liên hoàn ngục liền nhau như dây chuyền không khác, các thứ khổ hành vĩnh viễn không gián đoạn.",
   },
   {
-    heading: "Kích phúc địa ngục",
+    heading: "KÍCH PHÚC ĐỊA NGỤC",
     content:
       "Là địa ngục đâm bụng. Trong kinh luật dị tướng nói: Phàm là người lấy tâm ác độc hại chúng sanh, lấy chỉa sắt đâm cá, giết hại các loài thủy tộc hoặc săn bắn cầm thú thì phải chuốc lấy tội báo đâm bụng. Tội báo này chẳng những bị đâm bụng mà còn bị đâm khắp thân thể đến khi máu thịt nát rã mới thôi, đau khổ thê thảm vạn phần, gió thổi thì sống trở lại, phải chịu nhiều lần thọ tội báo, thống khổ không thể tả.",
   },
   {
-    heading: "Kiếm diệp địa ngục",
+    heading: "KIẾM DIỆP ĐỊA NGỤC",
     content:
       "Là địa ngục lá kiếm. Kinh khởi thế nói lúc sanh tiền không có lòng từ bi, xúi giục kẻ khác dùng dao gậy đánh nhau hoặc sai khiến chiến đấu hoặc tụ tập đại chúng đấu nhau hoặc xâm phạm quốc độ dẫn đến chiến tranh. Sau khi chết đọa vào tội báo này củng cố thế lực mạnh hiếp kẻ yếu đề cao cạnh tranh biến thành đấu tranh, đề cao đấu tranh biến thành chiến tranh. Bá tánh vô tội chịu lấy kiếp nạn trước chưa từng có. Ngày nay địa cầu đã trở thành thôn địa cầu xâm lược chiếm lấy, đều là việc không nên làm, nhìn thấy địa ngục quả báo như thế, chúng ta nên bình tĩnh mà suy nghĩ giá trị và ý nghĩa của đời người tại đâu. ",
   },
   {
-    heading: "Bạt nhiệt lê địa ngục",
+    heading: "BẠT NHIỆT LÊ ĐỊA NGỤC",
     content:
       "Là địa ngục kéo lưỡi, thị phi đều do cái miệng. Khẩu nghiệp đã tạo tội ác không có cùng tận, tội báo khổ nhiều thê thảm, bức họa đồ chỉ rõ là kéo lưỡi của tội nhân ra dùng móc sắt kéo cày trên đất. Phật nói: <i>“Kẻ hai lưỡi hai mặt, thường hại sau lưng người”</i>.. Thọ tội khổ này khóc kêu la không ngừng. Thọ tội này xong còn phải đọa qua ngục uống nước đồng sắt sôi, thiêu đốt cổ họng kế đến thiêu đốt tim phổi gan ruột v…v. Các thứ khổ sở bởi do miệng lưỡi đã tạo chủng chủng tội nghiệp lại hủy báng Phật, hủy báng Thánh hiền. Tạo lời sanh sự dẫn đến xung đột trọng đại, lừa gạt người già yếu lương thiệt v…v. Sau khi chết đều tránh không khỏi địa ngục kéo lưỡi.",
   },
   {
-    heading: "Tiên thát địa ngục",
+    heading: "TIÊN THÁT ĐỊA NGỤC",
     content:
       "Là địa ngục roi vọt. Động vật tuy nhỏ cũng là một sanh mạng, cố ý dùng roi đánh hoặc dẫm đạp những động vật nhỏ như kiến, tuy chúng nó không biết nói chuyện, chẳng có khả năng kháng cự nhưng sự đau khổ của chúng nó cùng với người chẳng có khác nhau. Lúc còn sống chẳng có tâm từ bi. Sau khi chết bị roi vọt vào thân như bóng theo hình, một báo trả một báo, chúng ta phải đề cao cảnh giác.",
   },
   {
-    heading: "Chước triệt địa ngục",
+    heading: "CHƯỚC TRIỆT ĐỊA NGỤC",
     content:
       "Là địa ngục chém chặt. Con người vì muốn ăn ngon no bụng, thích ăn thịt có máu huyết hoặc giết hoặc chặt, hoặc còn sống chặt đứt thành miếng, tạo tác sát nghiệp này sau khi chết đều phải chịu quả báo chém chặt. Đích thật là <em>tâm nghiệp họa sư, tự nghiệp họa tác</em>, nghiệp quả phân minh tự làm tự chịu.",
   },
   {
-    heading: "Hàn băng địa ngục ",
+    heading: "HÀN BĂNG ĐỊA NGỤC ",
     content:
       "Là địa ngục lạnh giá. Ở trong đó, gió buốt từng cơn thổi liên tiếp không dứt, khiến tội nhân lạnh thấu xương tủy, da thịt tê cứng nứt nẻ, máu mủ rướm ra rồi khô cứng lại như đá; tội nhân đau đớn vô ngần, kêu gào không thành tiếng nữa, mệt mỏi đến chết đi. <br>    Trong kinh Luật Dị Tướng nói: ném chúng sanh tới chỗ đông lạnh chết, thí như bắt cá đem cá còn sống để trong phòng lạnh đông lạnh chết, ngoài ra sau khi con người vừa tắt thở, lật đật đem người chết cho vào phòng lạnh, điều này thật là bất nhân. Sau khi chết đều đọa vào địa ngục này. Trong Ngọc Chuẩn Luận Khoa nói: ỷ thế hiếp người khiến cho lòng người run sợ cũng đọa vào địa ngục này. Ngày nay có rất nhiều bọn côn đồ dùng thủ đoạn hăm dọa, bức ép đối phương phải tuân theo. Những người này sau khi chết khó mà thoát khỏi ngục này. Người háo sắc, tham uống rượu và bất hiếu với cha mẹ cũng sẽ bị đày vào địa ngục này. <br>    Lại nữa: Lúc còn sống, kiếm sống bằng những việc khỏa thân, nhảy nhót gợi tình, hoặc tính thích khỏa thân mê hoặc người ta, sau khi chết sẽ vào “Hàn Băng địa ngục” để mà chịu cái lạnh không mảnh vải che thân.    ",
   },
   {
-    heading: "Ngạ quỷ địa ngục",
+    heading: "NGẠ QUỶ ĐỊA NGỤC",
     content:
       "Là địa ngục quỷ đói. <i>Nhất niệm sanh tâm khởi, bá vạn chướng môn khai</i>. Đọa vào địa ngục này đều do chủng chủng lòng tham bỏn sẻn, do tham dục sở tạo, không hành pháp bố thí. Nhìn thấy các ngạ quỷ chúng sanh phải chịu khổ đói khát, tự thiêu đốt thân, rất là khổ não, nước mắt như mưa, kêu khóc bi thảm, than thở bi ai, gian nan thống khổ như trong họa đồ vậy. Quan âm đại sĩ với lòng từ bi đến thí thực cứu khổ cứu nạn. Nếu trong lúc này mà có thể sanh lòng đại sám hối, tức có thể rất mau, thoát khỏi ngạ quỷ đạo.<br><br>Bà Sa Luận viết: “Do mong cầu nên gọi là Quỷ, tức là loài ngạ quỷ thường đi theo người khác, mong được thức ăn để duy trì tánh mạng. Có thuyết bảo do chúng đói khát dữ dội nên gọi là Quỷ. Do chúng bo bo tích cóp nên cảm cái nghiệp đói khát. Trong trăm ngàn năm chẳng được nghe đến cái tên của nước uống, huống là được thấy hay là chạm được. Lại bảo do chúng bị xua đuổi nên gọi là Quỷ: Ở nơi nào cũng thường bị chư thiên xua đuổi”.<br><br> Đại Kinh Khoa Chú ghi: “Loài ngạ quỷ có mặt khắp mọi nơi. Kẻ nào có phước đức thì làm thần trong rừng, núi, gò mả, miếu thờ. Kẻ không có phước đức ở chỗ chẳng sạch, không có thức ăn, luôn bị đánh đập, ngăn sông, lấp biển, chịu khổ vô lượng”.      ",
   },
   {
-    heading: "Nùng huyết địa ngục",
+    heading: "NÙNG HUYẾT ĐỊA NGỤC",
     content:
       "Là địa ngục máu mủ. Trong địa ngục này tự nhiên có máu mủ tanh hôi nóng sôi sùng sục, tội nhân chạy tới chạy lui qua lại vì nóng quá, nên bị máu tanh nóng đốt từ chân lên đến đầu, thịt rữa ra chỉ còn xương, đau đớn kêu gào, không thể chịu nổi, vì tội cũ chưa hết nên chẳng thể chết được. <br> <br>Ngọc Lịch nói: Lúc sanh tiền, kẻ ưa thích giết hại sanh linh động vật thì đọa vào địa ngục này, động vật bị giết hại quang cảnh thật là tàn nhẫn, máu chảy như nước, kêu rên đến chết. Đây thật là bi thảm. Nếu là con người, lẽ nào chúng ta không phẫn nộ, không báo thù chăng! Trong Ngọc Chuẩn Luận Khoa nói: Người âm mưu đoạt tài sản của kẻ khác, thí dụ như tính kế lừa gạt tiền tài của người già không biết chữ, khiến cho họ lẻ loi, ôm hận mà chết, đây đều là tạo tội đại cực ác, giống như loài quỷ hút máu vậy. Sau khi chết đọa vào địa ngục này đều phải trả nợ.    ",
   },
   {
-    heading: "Phẫn niếu nê địa ngục",
+    heading: "PHẪN NIẾU NÊ ĐỊA NGỤC",
     content:
       "Là địa ngục nước tiểu bùn phân. Khắp nơi trong cảnh địa ngục này toàn là phân, nước tiểu nhơ nhớt và đồng nóng, chẳng những mùi hôi thối khó ngửi không thể tả. Trong phân có dòi, dòi cứng như kim cang. Tội nhân ăn dòi, dòi vào trong thân, trước ăn cái môi, sau ăn cái lưỡi. Tiếp tục ăn cổ họng, tim, phổi, lá lách, ruột non, ruột già, gân; ăn hết tất cả máu thịt như thế trải qua vô lượng trăm ngàn năm mới hết. Nếu người lúc sanh tiền thích ăn ruột bao tử của heo bò dê chó, đã uống rượu say sưa, phạm lỗi lầm như ngũ nghịch với cha mẹ, xâm phạm thân hữu, gian dâm với vợ của kẻ khác, bỏ bê sự nghiệp, dùng lời thô lỗ mắng chửi người, v.v…, đều đọa địa ngục này. Tuy rằng ngày nay khoa học kỹ thuật phát đạt, vật chất văn minh, tương phản lại đạo đức của con người càng ngày càng đọa lạc. Trong đời này chúng ta muốn hướng lên trên hoặc là đọa xuống, tự mình phải nên phản tỉnh tư duy.",
   },
