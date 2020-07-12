@@ -94,13 +94,13 @@ $(function () {
       .html(contents[j - 1].content); //content for p in page
     $(this)
       .children("a")
-      .attr("href", "images/dnbtd/" + startImgItem + ".png"); //href for a tag in page
+      .attr("href", "images/dnbtd/" + startImgItem + ".jpg"); //href for a tag in page
 
     // ------img address in page
     $(this)
       .children("a")
       .children("img")
-      .attr("src", "images/dnbtd/" + startImgItem + ".png");
+      .attr("src", "images/dnbtd/" + startImgItem + ".jpg");
 
     //-------get name for side bar list
     itemName = startImgItem + ". " + $(this).children("h1").html();
@@ -174,7 +174,7 @@ $(function () {
   function add_content(xTimes) {
     for (i = 1; i <= xTimes; i++) {
       $("#allPage").append(
-        "<div class=page><h1>...</h1><a href='images/dnbtd/1.png'><img class=' img-thumbnail rounded mx-auto d-block box' alt='1'/></a><p>...</p> <hr/></div>"
+        "<div class=page><h1>...</h1><a href='images/dnbtd/1.jpg'><img class=' img-thumbnail rounded mx-auto d-block box' alt='1'/></a><p>...</p> <hr/></div>"
       );
       $("#mySidebar").append(
         "<a class='list-group-item list-group-item-action' href='#'>Item 5</a>"
@@ -188,12 +188,12 @@ $(function () {
       $selectedDiv.children("p").html(contents[count - 1].content); //content for p in page
       $selectedDiv
         .children("a")
-        .attr("href", "images/dnbtd/" + startImgItem + ".png"); //href for a tag in page
+        .attr("href", "images/dnbtd/" + startImgItem + ".jpg"); //href for a tag in page
       // ------img address in page
       $selectedDiv
         .children("a")
         .children("img")
-        .attr("src", "images/dnbtd/" + startImgItem + ".png");
+        .attr("src", "images/dnbtd/" + startImgItem + ".jpg");
       //-------get name for side bar list
       var itemName2 = startImgItem + ". " + $selectedDiv.children("h1").html();
       $("#mySidebar a")
