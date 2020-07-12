@@ -7,6 +7,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- favicon -->
     <link
       rel="apple-touch-icon"
@@ -28,12 +33,9 @@
     <link rel="manifest" href="/site.webmanifest" />
     <!-- font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700;900&family=Varela+Round&family=Montserrat&:wght@600;900&family=Open+Sans:wght@700;800&display=swap"
       rel="stylesheet"
     />
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Bootstrap CSS -->
     <link
@@ -42,15 +44,15 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- external CSS -->
-    <link rel="stylesheet" href="css-index.css" />
-    <title>Around the World</title>
+    <link rel="stylesheet" href="css/dnbtd-css.css" />
+    <title>Địa ngục biến tướng đồ</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#mySidebar" data-offset="2">
     <!-- navbar -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar1">
+    <nav class="navbar navbar-expand-lg navbar-light rounded" id="navbar1">
       <img
         src="images/lotus.jpg"
         class="rounded-circle"
@@ -58,7 +60,7 @@
         height="30"
         alt=""
       />
-      <a class="navbar-brand" href="#">&nbsp; Around The World</a>
+      <a class="navbar-brand ml-1" href="#">&nbsp; Địa ngục biến tướng đồ</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -74,148 +76,287 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
+            <a class="nav-link" href="dia-nguc-bien-tuong-do.html">DNBTD</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="dnbtd.html">Link</a>
+            <a class="nav-link" href="test.html">Test</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
       </div>
     </nav>
-    <!-- navbar -->
 
-    <!-- jumbotron -->
-    <div class="jumbotron jumbotron-fluid mb-0">
-      <!-- /.container -->
-      <div class="jumbotron-background">
-        <img src="images/BingImageOfTheDay_20200604.jpg" class="blur" />
-      </div>
-      <div class="container text-white text-center">
-        <h1 class="display-4" id="hello">Hello, world!</h1>
-        <p class="lead">
-          This is a simple hero unit, a simple jumbotron-style component for
-          calling extra attention to featured content or information.
-        </p>
-        <hr class="my-4" />
-        <p>
-          It uses utility classes for typography and spacing to space content
-          out within the larger container.
-        </p>
-        <a class="btn btn-primary btn-lg" id="jumboBtn" href="#" role="button"
-          >Learn more</a
-        >
-
-        <!-- /.container -->
-      </div>
-    </div>
-
-    <!-- /.jumbotron -->
-
-    <div class="section-header text-center py-5">
-      <h2 class="display-4">This is an image gallery</h2>
-    </div>
-    <!-- gallery image from here -->
-    <div class="gallery container mt-4">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-6 col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+        <!-- sidebar -->
+        <div id="mySidebar" class="sidebar list-group">
+          <h4 class="ml-4 text-dark">
+            Mục lục
+          </h4>
+          <a href="javascript:void(0)" class="closebtn">×</a>
+
+          <a class="list-group-item list-group-item-action" href="#list-item-1"
+            >Item 1</a
+          >
+          <a class="list-group-item list-group-item-action" href="#">Item 2</a>
+          <a class="list-group-item list-group-item-action" href="#">Item 2</a>
+          <a class="list-group-item list-group-item-action" href="#">Item 2</a>
+          <a class="list-group-item list-group-item-action" href="#">Item 2</a>
+          
+          
+        </div>
+        <!-- button -->
+        <div>
+          <button class="openbtn">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
+        <!-- main -->
+        <main role="main" class="col">
+          <div class="py-md-3 px-md-5 px-sm-4 px-3" id="main">
+            <!-- pagination -->
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item ">
+                  <a
+                    class="page-link"
+                    href="#"
+                    aria-label="Previous"
+                    tabindex="-1"
+                  >
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item ">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="dnbtd-2.html">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="dnbtd-3.html">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- heading -->
+            <div class="text-center pt-3 pb-2 mb-3 heading">
+              <h1 class="mb-4">Địa ngục biến tướng đồ<br />Nhân quả đồ giám</h1>
+              <h3 class="mb-2">
+                地獄變相圖 - 因果圖鑑
+              </h3>
+              <h5 class="mb-5">Giang Dật Tử tiên sinh họa</h5>
+
+              <img
+                src="images/dnbtd/heading-cn.png"
+                class="img-thumbnail rounded mx-auto d-block mb-4"
+                alt="1"
+              />
+            </div>
+            <!-- entry word -->
+            <div class="pt-3 pb-2 mb-3 entry-word">
+              <h3 class="h3">
+                <st class="fire">L</st
+                ><st class="fire" style="animation-delay: 0.2s;">ờ</st
+                ><st class="fire" style="animation-delay: 0.4s;">i</st
+                ><st class="fire" style="animation-delay: 0.6s;">&nbsp; </st
+                ><st class="fire" style="animation-delay: 1s;">t</st
+                ><st class="fire" style="animation-delay: 0.8s;">ự</st
+                ><st class="fire" style="animation-delay: 0.6s;">a</st>
+              </h3>
+              <p class="text-justify">
+                Vào triều đại nhà Đường, có một họa sĩ nổi tiếng được người đời
+                gọi ông là họa thánh đó chính là Ngô Đạo Tử. Thời đó ông được
+                mời vẽ tranh cho chùa Cảnh Vân tại Trường An.<br />
+                Đạo Tử vẽ bộ bích họa “Địa ngục biến tướng đồ” dựa trên sự tích
+                “Mục Liên cứu mẹ” của đạo Phật. Những hình quỷ quái yêu ma ở địa
+                ngục sống động tới mức khi xem tranh, người ta có cảm giác sởn
+                gai ốc như yêu ma sắp bước xuống. Bộ tranh “Địa ngục biến tướng
+                đồ” vẽ xong, dân trong kinh thành đến xem, đều sợ phải xuống địa
+                ngục chịu tội, nên dốc tâm làm việc thiện; có những người đồ tể
+                và chài lưới bỏ nghề sang làm nghề khác. <br />
+                Khi đạo đức xã hội nhân loại tuột trên dốc lớn, cùng với sự phát
+                triển của khoa học kĩ thuật người ta đánh mất đạo trong tâm. Đủ
+                các ngành nghề phát sinh, con người vì danh lợi mà bất chấp mọi
+                thủ đoạn. Nếu như con người trong xã hội quá khứ khi nhắc tới
+                địa ngục liền quy chính lại bản thân lo tích đức hành thiện thì
+                ngày nay nhắc tới địa ngục người ta liền coi đó là mê tín.
+                <br />
+                Chứng kiến sự tha hóa đó, họa sĩ Giang Dật Tử lấy cảm hứng từ
+                bức bích họa của Ngô Đạo Tử mà phục chế lại “Địa ngục biến tướng
+                đồ”. Phải nói rằng đây là bộ tác phẩm mà không chỉ có giá trị
+                nghệ thuật thưởng thức mà còn có đạo khí mới được di phong chánh
+                tục, tịnh hóa nhân tâm. Cho nên tác họa của ông tuy không lời,
+                nhưng lại ẩn chứa những hàm ý thâm thúy. <br />
+                Phải nói rằng những tác phẩm hội họa về Địa ngục biến tướng đồ
+                không chỉ dừng lại ở một kiệt tác nghệ thuật. Không chỉ mang giá
+                trị thưởng thức hay đơn thuần là tranh tôn giáo, mà đây còn là
+                sự cảnh tỉnh và có tác dụng khuyến thiện, giáo hóa cho con người
+                thế gian.<br />
+                Xét về góc độ nghệ thuật thì những bức họa này với những nét vẽ
+                rất tinh luyện, trong tranh cũng có điểu có sơn tạo nên sự hài
+                hòa làm xoa dịu tính tương phản của những cảnh ghê rợn được miêu
+                tả trong những ải của địa ngục.<br />
+                Địa ngục biến tướng đồ là một kiệt tác hội họa có tác dụng quy
+                chính nhân tâm con người. Trong cuộc sống hiện đại ngày nay nó
+                khởi được thiện tâm thiện niệm của con người, giúp con người
+                đoạn ác hành thiện. Và thông điệp mà tác giả gửi gắm là hãy trở
+                thành một người tốt chân chính, sống thiện lương và con đường
+                tương lai của sinh mệnh mình là sự lựa chọn của chính mình. Địa
+                ngục hay thiên giới là ở chính cách sống của chúng ta.
               </p>
+              <blockquote class="blockquote text-right">
+                <footer class="blockquote-footer">
+                  Nguồn:<cite title="Source Title">DKN.tv</cite>
+                </footer>
+              </blockquote>
+              <hr />
+            </div>
+            <!-- content -->
+            <div class="text-justify" id="allPage">
+              <div class="page" id="list-item-1">
+                <h1>...</h1>
+                <a href="images/dnbtd/1.png"
+                  ><img
+                    class="img-thumbnail rounded mx-auto d-block box"
+                    alt="1"
+                /></a>
+                <p>...</p>
+                <hr />
+              </div>
+              <div class="page">
+                <h1>...</h1>
+                <a href="images/dnbtd/1.png"
+                  ><img
+                    class="img-thumbnail rounded mx-auto d-block box"
+                    alt="1"
+                /></a>
+                <p>...</p>
+                <hr />
+              </div>
+              <div class="page">
+                <h1>...</h1>
+                <a href="images/dnbtd/1.png"
+                  ><img
+                    class="img-thumbnail rounded mx-auto d-block box"
+                    alt="1"
+                /></a>
+                <p>...</p>
+                <hr />
+              </div>
+              <div class="page">
+                <h1>...</h1>
+                <a href="images/dnbtd/1.png"
+                  ><img
+                    class="img-thumbnail rounded mx-auto d-block box"
+                    alt="1"
+                /></a>
+                <p>...</p>
+                <hr />
+              </div>
+              <div class="page">
+                <h1>...</h1>
+                <a href="images/dnbtd/1.png"
+                  ><img
+                    class="img-thumbnail rounded mx-auto d-block box"
+                    alt="1"
+                /></a>
+                <p>...</p>
+                <hr />
+              </div>
+        
+            </div>
+            <!-- pagination -->
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item ">
+                  <a
+                    class="page-link"
+                    href="#"
+                    aria-label="Previous"
+                    tabindex="-1"
+                  >
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item ">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="dnbtd-2.html">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="dnbtd-3.html">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </main>
+        <!-- main -->
+        <!-- right bar -->
+        <div class="d-md-block list-group col-md-3" id="right-bar">
+          <h4 class="px-3 py-2 mb-0">
+            Link
+          </h4>
+          <div class="list-group-item list-group-item-action">
+            <a href="https://vi.falundafa.org/" target="blank"
+              ><h5>CHUYỂN PHÁP LUÂN - cuốn thiên thư đến từ thiên thượng</h5></a
+            >
+            <img
+              src="images/link/Book-news.jpg"
+              class="img-fluid img-thumbnail rounded"
+              alt="1"
+            />
+            <input type="checkbox" id="expanded" />
+            <p>
+              CHUYỂN PHÁP LUÂN được xem là cuốn thiên thư đến từ thiên thượng
+              vạn năm khó gặp. Đây là cuốn sách chỉ đạo tu luyện của Phật Gia và
+              vén màn bí mật từ thiên cổ của nhân loại và khoa học, đồng thời
+              giải khai được nguồn gốc của bệnh tật, giàu nghèo cũng như đưa ra
+              phương pháp để thoát khỏi bệnh tật, đau khổ và sống hạnh phúc,…
+              Chân tướng vụ trụ, các cõi không gian và bí ẩn thân thể người cũng
+              như tất cả những gì bạn cần biết để lý giải cuộc sống đã được diễn
+              đạt rõ ràng, mạch lạc trong sách.
+            </p>
+            <label for="expanded" role="button">read more</label>
+          </div>
+          <div class="list-group-item list-group-item-action">
+            <div class="embed-responsive embed-responsive-16by9">
+              <div class="mt-2">
+                <a
+                  href="https://www.youtube.com/watch?v=HaUoCRDE2Nk"
+                  target="_blank"
+                >
+                  <span class="text-dark"
+                    >Bộ phim Đến vì bạn phần 2 (Coming for you 2)</span
+                  >
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="card">
-            <img class="card-img-top test" src="..." alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
+        <!-- Dark Overlay element -->
+
+        <div class="overlay" id="overlaySec"></div>
       </div>
     </div>
-    <!-- gallery image -->
-
-    <!-- footer -->
-    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-      <div class="container text-center text-light">
-        <small>Copyright &copy; Your Website</small>
-      </div>
-    </footer>
-    <!-- footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/content.js"></script>
+    <script src="js/dnbtd.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -232,7 +373,5 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <!-- external script -->
-    <script src="javascript.js"></script>
   </body>
 </html>
