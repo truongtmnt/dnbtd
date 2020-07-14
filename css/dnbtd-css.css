@@ -315,7 +315,7 @@ hr:after {
   position: fixed;
   top: 0px;
   /* full screen */
-  width: 100vw;
+  width: 105vw;
   height: 120vh;
   /* transparent black */
   background: rgba(0, 0, 0, 0.7);
