@@ -174,7 +174,7 @@ $(function () {
   function add_content(xTimes) {
     for (i = 1; i <= xTimes; i++) {
       $("#allPage").append(
-        "<div class=page><h1>...</h1><a href='images/dnbtd/1.jpg'><img class=' img-thumbnail rounded mx-auto d-block box' alt='1'/></a><p>...</p> <hr/></div>"
+        "<div class=page><h1>...</h1><a href='images/dnbtd/1.jpg' target='blank'><img class=' img-thumbnail rounded mx-auto d-block box' alt='1'/></a><p>...</p> <hr/></div>"
       );
       $("#mySidebar").append(
         "<a class='list-group-item list-group-item-action' href='#'>Item 5</a>"
@@ -254,4 +254,7 @@ $(function () {
       $(this).attr("href", "dnbtd-" + nameTag + ".html");
     }
   });
+
+  // add target blank for img
+  $(".page a").attr("target", "blank");
 });
