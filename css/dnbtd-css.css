@@ -17,7 +17,12 @@ body {
   font-family: var(--font1);
   background: var(--eight-color);
 }
-
+.row {
+  margin-right: 0;
+}
+.container-fluid {
+  padding-right: 0;
+}
 .navbar {
   background-color: var(--sixth-color);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
@@ -25,7 +30,7 @@ body {
 
 .sidebar {
   background: var(--forth-color) var(--main-color);
-  height: calc(100vh);
+  height: calc(105vh);
   width: 0px;
   position: sticky;
   z-index: 2;
