@@ -29,7 +29,7 @@ body {
 
 .sidebar {
   background: var(--forth-color) var(--main-color);
-  height: calc(105vh);
+  height: calc(102vh);
   width: 0px;
   position: sticky;
   z-index: 2;
@@ -142,27 +142,6 @@ body {
 }
 .list-group .list-group-item {
   background-image: var(--main-color);
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {
-    padding-top: 15px;
-  }
-  .sidebar a {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 600px) {
-  #allPage h1 {
-    text-align: center;
-    left: 50%; /* Move the element to the left by 50% of the container's width*/
-    transform: translateX(-50%);
-  }
-  .container-fluid {
-    padding-left: 10px;
-  }
 }
 
 hr {
@@ -360,5 +339,36 @@ hr:after {
       0.1em -0.25em 0.6em #ffae34, -0.15em -0.45em 0.5em #ec760c,
       0.1em -0.5em 0.6em #cd4606, 0 -0.8em 0.6em #973716,
       -0.2em -1em 0.8em #451b0e;
+  }
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #allPage h1 {
+    text-align: center;
+    left: 50%; /* Move the element to the left by 50% of the container's width*/
+    transform: translateX(-50%);
+  }
+  .container-fluid {
+    padding-left: 10px;
+  }
+  #main .heading h1 {
+    font-size: 1.9rem;
+  }
+  #allPage p {
+    font-size: 1.05rem;
+  }
+  #allPage p::first-letter {
+    font-size: 4rem;
+    line-height: 3rem;
   }
 }
