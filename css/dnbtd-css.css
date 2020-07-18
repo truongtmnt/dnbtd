@@ -127,6 +127,14 @@ body {
   max-width: 18%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
 }
+#right-bar a {
+  color: var(--third-color);
+}
+
+#right-bar a:hover {
+  color: var(--fifth-color);
+  text-decoration: none;
+}
 
 @media screen and (max-width: 990px) {
   #right-bar {
@@ -371,4 +379,8 @@ hr:after {
     font-size: 4rem;
     line-height: 3rem;
   }
+}
+
+#allPage p ol {
+  padding-left: 20px;
 }
