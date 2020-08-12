@@ -128,12 +128,16 @@ body {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
 }
 #right-bar a {
-  color: var(--third-color);
+  color: var(--fifth-color);
 }
 
 #right-bar a:hover {
-  color: var(--fifth-color);
+  color: var(--third-color);
   text-decoration: none;
+}
+#right-bar h5 {
+  font-family: var(--font4);
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 990px) {
@@ -240,6 +244,7 @@ hr:after {
 
 #allPage h1 {
   font-family: var(--font4);
+  font-weight: bold;
   color: black;
   line-height: 1.4em;
   font-size: 2rem;
